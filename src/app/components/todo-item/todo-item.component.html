@@ -1,0 +1,11 @@
+<div class="item-wrapper">
+  <div *ngIf="!isItemEdit">
+    <p class="list-item">{{items}}</p>
+  </div>
+  <form (submit)="saveSubmit()">
+    <input *ngIf="isItemEdit" [(ngModel)]="items" [ngModelOptions]="{standalone: true}" type="text" value={{items}}>
+    <button class="delete" (click)="deleteItem(id)">Delete</button>
+    <button *ngIf="!isItemEdit" class="save" (click)="editItem()">Edit</button>
+    <button *ngIf="isItemEdit" type="submit">Save</button>
+  </form>
+</div>

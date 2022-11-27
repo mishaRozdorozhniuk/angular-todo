@@ -1,0 +1,10 @@
+<form (submit)="onSubmit()">
+  <input [(ngModel)]="name" [ngModelOptions]="{standalone: true}"
+  placeholder="Add new item">
+  <button type="submit">+</button>
+</form>
+
+<div *ngFor="let items of itemsArr; let i = index">
+  <app-todo-item [itemsArr]="itemsArr" [items]="items" [id]="i"></app-todo-item>
+</div>
+

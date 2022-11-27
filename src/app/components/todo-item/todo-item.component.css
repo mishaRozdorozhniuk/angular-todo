@@ -1,0 +1,32 @@
+.list-item {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 400px;
+  height: 40px;
+  margin: 5px auto 0 auto;
+  box-shadow: -1px 6px 20px -7px rgba(0,0,0,0.75);
+  border-radius: 5px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+.save, .delete {
+  margin-left: 5px;
+  padding: 5px;
+  border: none;
+  background-color: #00bbff;
+  color: #fff;
+}
+
+.delete {
+  background-color: red;
+}
